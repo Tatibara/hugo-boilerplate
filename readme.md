@@ -1,11 +1,11 @@
 # Hugo
 
 ## Commands
->> hugo new site example_site site
->> hugo server
->> hugo new page/example_page.md // to create a new content file
->> hugo // to build the project into public folder
->> hugo new theme example_theme
+- hugo new site example_site site
+- hugo server
+- hugo new page/example_page.md // to create a new content file
+- hugo // to build the project into public folder
+- hugo new theme example_theme
 
 ## Good resourses 
 - https://gohugo.io
