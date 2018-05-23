@@ -1,0 +1,6 @@
+- id: homepage.content
+  translation: "Startseite"
+- id: about.content
+  translation: "Über Uns Seite"
+- id: contact.content
+  translation: "Kontakt Seite"

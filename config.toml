@@ -1,0 +1,72 @@
+baseURL = "/"
+languageCode = "de-de"
+DefaultContentLanguage = "de"
+
+[permalinks]
+    page = "/:filename/"
+
+
+[languages.de]
+    weight = 50
+    languageName = "Deutsch"
+    title = "Hugo Boilerplate"
+
+  [[languages.de.menu.main]]
+    url    = "/"
+    name   = "Startseite"
+    weight = -120
+
+  [[languages.de.menu.main]]
+    identifier = "about"
+    name = "Über uns"
+    url = "/about/"
+    weight = -110
+
+  [[languages.de.menu.main]]
+    identifier = "contact"
+    name = "Kontakt"
+    title = "Kontaktieren Sie Uns"
+    url = "/contact/"
+    weight = -110
+
+  [[languages.de.menu.footer]]
+    name = "Über uns"
+    url = "/about/"
+    weight = -110
+
+[languages.en]
+    title = "Hugo Boilerplate"
+    weight = 1
+    languageName = "English"
+
+  [[languages.en.menu.main]]
+    url    = "/en/"
+    name   = "Home"
+    weight = -120
+
+  [[languages.en.menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/en/about/"
+    weight = -110
+
+  [[languages.en.menu.main]]
+    identifier = "contact"
+    name = "Contact Us"
+    url = "/en/contact/"
+    weight = -110
+
+  [[languages.en.menu.footer]]
+    name = "About Us"
+    url = "/en/about/"
+    weight = -110
+
+
+[params]
+    description = ""
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"

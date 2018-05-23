@@ -1,0 +1,27 @@
+<nav class="nav">
+    <a href="{{ .Permalink }}" class="nav-logo">
+        <img src="{{ .Site.BaseURL }}imgs/{{ .Site.Params.logo.url }}" width="{{ .Site.Params.logo.width }}" height="{{ .Site.Params.logo.height }}"
+            alt="{{ .Site.Params.logo.alt }}">
+    </a>
+
+    <ul class="nav-links">
+        {{- $currentPage := . -}} {{ range .Site.Menus.main -}}
+        <li class="{{ if $currentPage.IsMenuCurrent " main " . }}active{{ end }}">
+            <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+        </li>
+        {{- end }}
+    </ul>
+
+    {{ if gt (len .Site.Home.AllTranslations) 1 }}
+    <ul id="dropdown-languages" class="dropdown-content">
+        {{ range .Site.Home.AllTranslations }}
+        <li>
+            <a class="dropdown-item black-text" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+        </li>
+        {{ end }}
+    </ul>
+    <a class="dropdown-button black-text" href="#!" data-activates="dropdown-languages">{{ .Site.Language.LanguageName }}
+        <i class="material-icons right">arrow_drop_down</i>
+    </a>
+    {{ end }}
+</nav>

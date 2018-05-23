@@ -1,0 +1,16 @@
+{{ partial "common/header.html" . }}
+
+<main class="content" role="main">
+    {{ if eq .File.TranslationBaseName "about" }} 
+        {{ partial "about/about.html" . }} 
+    {{ end }}
+    
+    {{ if eq .File.TranslationBaseName "contact" }} 
+        {{ partial "contact/contact.html" . }} 
+    {{ end }} 
+    
+    {{ .Content }}
+
+</main>
+
+{{ partial "common/footer.html" . }}
